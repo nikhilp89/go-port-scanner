@@ -32,7 +32,7 @@ go mod download
 Build the application
 go build -o portscanner
 
-#Usage
+# Usage
 
 Basic Usage
 
