@@ -91,12 +91,10 @@ func main() {
 	start_time := time.Now()
 
 	ps := &PortScanner {
-		//host: "17.57.0.206",
-		host: "60.205.174.40",
+		host: "127.0.0.1",
 		lock: semaphore.NewWeighted(ulimit()),
 	}
 
-	//ps.StartUnlimited(0, 65535, 500*time.Millisecond)
 	ps.StartLimited(0, 65535, 500*time.Millisecond)
 
 	time_elapsed := time.Since(start_time)
